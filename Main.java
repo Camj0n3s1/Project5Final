@@ -21,11 +21,6 @@ import java.util.ArrayList;
 
 public class Main extends Application{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		
@@ -71,6 +66,18 @@ public class Main extends Application{
 
 		// List View
 		private ListView<String> listView = new ListView<String>();
+		
+		// Sets the pane characteristics
+					pane = new GridPane();
+					pane.setPadding(new Insets(10, 10, 10, 10));
+					scene = new Scene(pane);
+					pane.setVgap(10);
+					pane.setHgap(10);
+	}
+	
+		public static void main(String[] args) {
+			launch(args);
+
 	}
 
 }
