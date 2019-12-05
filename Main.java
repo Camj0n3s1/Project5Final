@@ -33,6 +33,10 @@ public class Main extends Application{
 		private Scene scene = null;
 		private GridPane pane = null;
 		
+		// Slider
+		private final Slider slider = new Slider(0, 4, 0);
+		private final Slider happinessSlider = new Slider(0,4,0);
+		
 	}
 
 }
