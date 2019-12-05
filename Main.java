@@ -62,6 +62,15 @@ public class Main extends Application{
 		private Label distance2Label = new Label("");
 		private Label distance3Label = new Label("");
 		private Label distance4Label = new Label("");
+		
+		// Text Field
+		private TextField newStationName = null;
+
+		// Combo Box
+		private ComboBox<String> stationNamesComboBox = new ComboBox<String>();
+
+		// List View
+		private ListView<String> listView = new ListView<String>();
 	}
 
 }
