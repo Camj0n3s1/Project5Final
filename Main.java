@@ -44,6 +44,12 @@ public class Main extends Application{
 		private Label hammingDistLabel = null;
 		private Label happinessLabel = null;
 		private Label adviceLabel = new Label();
+		
+		// Buttons
+		private Button calcHammingDistButton = null;
+		private Button addStationButton = null;
+		private Button showStationsButton = new Button();
+		private Button showAdviceButton = new Button();
 	}
 
 }
