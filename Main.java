@@ -50,6 +50,18 @@ public class Main extends Application{
 		private Button addStationButton = null;
 		private Button showStationsButton = new Button();
 		private Button showAdviceButton = new Button();
+		
+		// Distance labels
+		private Label distance0 = new Label("Distance 0 ");
+		private Label distance1 = new Label("Distance 1 ");
+		private Label distance2 = new Label("Distance 2 ");
+		private Label distance3 = new Label("Distance 3 ");
+		private Label distance4 = new Label("Distance 4 ");
+		private Label distance0Label = new Label("");
+		private Label distance1Label = new Label("");
+		private Label distance2Label = new Label("");
+		private Label distance3Label = new Label("");
+		private Label distance4Label = new Label("");
 	}
 
 }
