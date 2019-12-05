@@ -82,6 +82,17 @@ public class Main extends Application{
 					happinessSlider.setBlockIncrement(1);
 					happinessSlider.setMajorTickUnit(1);
 					happinessSlider.setShowTickLabels(true);
+
+		// Allows the button to be shown
+					showStationsButton.setText("Show Station");
+
+		// Initializes Buttons
+					calcHammingDistButton = new Button("Calculate HD");
+					addStationButton = new Button("Add Station");
+					showAdviceButton = new Button("Show Advice");
+
+					sliderValue.setAlignment(Pos.CENTER_LEFT);
+					happinessValue.setAlignment(Pos.CENTER_RIGHT);
 	}
 	
 		public static void main(String[] args) {
