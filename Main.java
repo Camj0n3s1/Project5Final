@@ -73,6 +73,15 @@ public class Main extends Application{
 					scene = new Scene(pane);
 					pane.setVgap(10);
 					pane.setHgap(10);
+		// Sets characteristics for the slider
+					slider.setBlockIncrement(1);
+					slider.setMajorTickUnit(1);
+					slider.setShowTickLabels(true);
+					
+		//Sets characteristics for happiness slider
+					happinessSlider.setBlockIncrement(1);
+					happinessSlider.setMajorTickUnit(1);
+					happinessSlider.setShowTickLabels(true);
 	}
 	
 		public static void main(String[] args) {
