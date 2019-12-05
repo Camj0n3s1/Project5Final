@@ -93,6 +93,36 @@ public class Main extends Application{
 
 					sliderValue.setAlignment(Pos.CENTER_LEFT);
 					happinessValue.setAlignment(Pos.CENTER_RIGHT);
+					hammingDistLabel = new Label("Enter Hamming Dist: ");
+					comparingLabel = new Label("Compare with: ");
+					happinessLabel = new Label("Current Happiness Level: ");
+
+					// Initializes text field
+					newStationName = new TextField();
+
+					// Allows slider to change values
+					slider.valueProperty().addListener(new ChangeListener<Number>() {
+						@Override
+						public void changed(ObservableValue<? extends Number> observableValue, Number oldValue, Number newValue) {
+							if (newValue == null) {
+								sliderValue.setText("");
+								return;
+							}
+							sliderValue.setText(Math.round(newValue.intValue()) + "");
+						}
+					});
+					
+					//Allows slider to change values
+					happinessSlider.valueProperty().addListener(new ChangeListener<Number>() {
+						@Override
+						public void changed(ObservableValue<? extends Number> observableValue, Number oldValue, Number newValue) {
+							if (newValue == null) {
+								sliderValue.setText("");
+								return;
+							}
+							happinessValue.setText(Math.round(newValue.intValue()) + "");
+						}
+					});
 	}
 	
 		public static void main(String[] args) {
