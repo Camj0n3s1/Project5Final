@@ -30,13 +30,20 @@ public class Main extends Application{
 	public void start(Stage primaryStage) throws Exception {
 		
 		// Creates Scene and pane
-		private Scene scene = null;
-		private GridPane pane = null;
+		private final Scene scene = null;
+		private final GridPane pane = null;
 		
 		// Slider
 		private final Slider slider = new Slider(0, 4, 0);
 		private final Slider happinessSlider = new Slider(0,4,0);
 		
+		// Labels
+		private Label comparingLabel = null;
+		private final Label sliderValue = new Label();
+		private final Label happinessValue = new Label();
+		private Label hammingDistLabel = null;
+		private Label happinessLabel = null;
+		private Label adviceLabel = new Label();
 	}
 
 }
